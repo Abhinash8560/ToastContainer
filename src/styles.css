@@ -1,0 +1,98 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.toastButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.toastButton .btn-red {
+  background: red;
+  color: #fff;
+  border: none;
+  height: 30px;
+  width: 120px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.toastButton .btn-green {
+  background: green;
+  color: #fff;
+  border: none;
+  height: 30px;
+  width: 120px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.toastButton .btn-blue {
+  background: blue;
+  color: #fff;
+  border: none;
+  height: 30px;
+  width: 120px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.toastButton .btn-yellow {
+  background: yellow;
+  color: #000;
+  border: none;
+  height: 30px;
+  width: 120px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
+}
+.toast-container {
+  position: fixed;
+  right: 0.5em;
+  top: 0.5em;
+  font-size: 14px;
+}
+.toast {
+  width: 12rem;
+  padding: 0.9rem;
+  border-radius: 10px;
+  background: #90ee90;
+  position: relative;
+  animation: slide 1s 1;
+  margin: 0.5em;
+  z-index: -1;
+  span {
+    position: absolute;
+    right: 1rem;
+    cursor: pointer;
+  }
+}
+.success {
+  background: green;
+  color: #fff;
+}
+.info {
+  background: blue;
+  color: #fff;
+}
+.warning {
+  background: yellow;
+}
+.error {
+  background: red;
+  color: #fff;
+}
+@keyframes slide {
+  0% {
+    transform: translateX(100%);
+  }
+  ,
+  100% {
+    transform: translateX(0%);
+  }
+}
